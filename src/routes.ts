@@ -7,10 +7,10 @@ import multer from 'multer';
 import path from 'node:path';
 import { listProducts } from './app/useCases/products/listProducts';
 import { listProductsByCategory } from './app/useCases/categories/listProductsByCategory';
-import { listOrders } from './app/useCases/Orders/listOrders';
-import { createOrder } from './app/useCases/Orders/createOrder';
-import { changeOrderStatus } from './app/useCases/Orders/changeOrderStatus';
-import { cancelOrder } from './app/useCases/Orders/cancelOrder';
+import { listOrders } from './app/useCases/orders/listOrders';
+import { createOrder } from './app/useCases/orders/createOrder';
+import { changeOrderStatus } from './app/useCases/orders/changeOrderStatus';
+import { cancelOrder } from './app/useCases/orders/cancelOrder';
 
 
 export const router = Router();
