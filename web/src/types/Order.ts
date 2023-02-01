@@ -1,13 +1,17 @@
 
+type OrderStatus = 'WAITING' | 'IN_PRODUCTION' | 'DONE'
+
 export interface Order {
   _id: string,
   table: string,
-  status: string
+  status: OrderStatus
   products: {
     _id: string,
-    quantity: number,
-    name: string,
-    imagePath: string,
-    price: number,
+    quantitiy: number,
+    product: {
+      name: string,
+      imagePath: string,
+      price: number,
+    }
   }[];
 }
